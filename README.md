@@ -242,3 +242,24 @@ This project serves as an introductory step toward further studies in intelligen
 
 **Author:** Armin Moradi 
 **Field of Interest:** Mechanical Engineering, Dynamics, Vibrations, Control, Robotics and Machine Learning
+## Results
+
+### Time Response
+
+![Time Response](results/time_response.png)
+
+### Phase Portrait
+
+![Phase Portrait](results/phase_portrait.png)
+
+### Actual vs. Predicted Velocity
+
+![Velocity Prediction](results/actual_vs_predicted_velocity.png)
+
+### Actual vs. Predicted Acceleration
+
+![Acceleration Prediction](results/actual_vs_predicted_acceleration.png)
+
+### System Matrix Comparison
+
+![System Matrix Comparison](results/system_matrix_comparison.png)
