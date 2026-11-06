@@ -240,7 +240,7 @@ This project serves as an introductory step toward further studies in intelligen
 
 ---
 
-**Author:** Armin Moradi 
+**Author:** Armin Moradi
 **Field of Interest:** Mechanical Engineering, Dynamics, Vibrations, Control, Robotics and Machine Learning
 ## Results
 
