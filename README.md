@@ -241,4 +241,4 @@ This project serves as an introductory step toward further studies in intelligen
 ---
 
 **Author:** Armin  
-**Field of Interest:** Mechanical Engineering, Dynamics, Control, and Machine Learning
+**Field of Interest:** Mechanical Engineering, Dynamics, Vibrations, Control, Robotics and Machine Learning
