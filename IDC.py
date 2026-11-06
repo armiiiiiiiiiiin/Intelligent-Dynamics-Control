@@ -4,6 +4,11 @@ Python script converted directly from IDC.ipynb.
 The code cells are kept in their original notebook order.
 Markdown cells have been omitted.
 """
+from pathlib import Path
+
+RESULTS_DIR = Path(__file__).resolve().parent / 'results'
+RESULTS_DIR.mkdir(exist_ok=True)
+
 
 # ====================================================================
 # Original notebook code cell 1
@@ -113,6 +118,12 @@ plt.xlabel('Time')
 plt.ylabel('Velocity')
 plt.grid()
 plt.tight_layout()
+plt.savefig(RESULTS_DIR / 'time_response.png', dpi=300, bbox_inches='tight')
+plt.savefig(RESULTS_DIR / 'phase_portrait.png', dpi=300, bbox_inches='tight')
+plt.savefig(RESULTS_DIR / 'mechanical_energy.png', dpi=300, bbox_inches='tight')
+plt.savefig(RESULTS_DIR / 'dataset_relationships.png', dpi=300, bbox_inches='tight')
+plt.savefig(RESULTS_DIR / 'actual_vs_predicted_velocity.png', dpi=300, bbox_inches='tight')
+plt.savefig(RESULTS_DIR / 'actual_vs_predicted_acceleration.png', dpi=300, bbox_inches='tight')
 plt.show()
 
 
