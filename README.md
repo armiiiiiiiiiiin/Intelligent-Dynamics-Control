@@ -15,9 +15,9 @@ The main objective is to investigate whether a data-driven model can recover the
 
 The dynamics of a free-vibration mass-spring-damper system are governed by:
 
-\[
+$$
 m\ddot{x}+c\dot{x}+kx=0
-\]
+$$
 
 where:
 
@@ -36,43 +36,43 @@ The system parameters are:
 
 The governing equation becomes:
 
-\[
+$$
 \ddot{x}=-0.5\dot{x}-4x
-\]
+$$
 
 ## 3. State-Space Representation
 
 Defining the state vector as:
 
-\[
+$$
 X=
 \begin{bmatrix}
 x\\
 \dot{x}
 \end{bmatrix}
-\]
+$$
 
 the system can be expressed in state-space form:
 
-\[
+$$
 \dot{X}=AX
-\]
+$$
 
 where:
 
-\[
+$$
 A=
 \begin{bmatrix}
 0&1\\
 -4&-0.5
 \end{bmatrix}
-\]
+$$
 
 The eigenvalues of the system are:
 
-\[
+$$
 \lambda_{1,2}=-0.25\pm1.9843j
-\]
+$$
 
 The negative real parts indicate asymptotic stability, while the imaginary parts indicate oscillatory behavior.
 
@@ -82,15 +82,15 @@ The system response is numerically simulated using Python and SciPy.
 
 Initial conditions:
 
-\[
+$$
 x(0)=1,\qquad \dot{x}(0)=0
-\]
+$$
 
 Simulation time:
 
-\[
+$$
 t\in[0,10]\text{ seconds}
-\]
+$$
 
 The simulation generates displacement and velocity trajectories, which are subsequently used to construct the machine learning dataset.
 
@@ -100,21 +100,21 @@ The input features and target variables are defined as:
 
 **Input features:**
 
-\[
+$$
 X_{\text{data}}=
 \begin{bmatrix}
 x&\dot{x}
 \end{bmatrix}
-\]
+$$
 
 **Target variables:**
 
-\[
+$$
 Y_{\text{data}}=
 \begin{bmatrix}
 \dot{x}&\ddot{x}
 \end{bmatrix}
-\]
+$$
 
 Thus, the model learns to predict the time derivatives of the system states from the current state.
 
@@ -149,13 +149,13 @@ Predicted derivatives are compared with the corresponding reference values obtai
 
 The objective is to compare the learned system matrix with the original physical system matrix:
 
-\[
+$$
 A_{\text{physical}}=
 \begin{bmatrix}
 0&1\\
 -4&-0.5
 \end{bmatrix}
-\]
+$$
 
 The learned coefficients are transformed back from the scaled feature space to the original physical feature space before comparison.
 
