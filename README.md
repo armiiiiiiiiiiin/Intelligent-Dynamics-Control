@@ -171,19 +171,7 @@ This comparison provides an indication of how accurately the machine learning mo
 - Scikit-learn
 - Jupyter Notebook
 
-## 10. Repository Structure
-
-```text
-Intelligent-Dynamics-Control/
-│
-├── IDC_notebook/
-│   └── IDC.ipynb
-│
-├── .gitignore
-└── README.md
-```
-
-## 11. How to Run
+## 10. How to Run
 
 Clone the repository:
 
@@ -217,7 +205,7 @@ IDC_notebook/IDC.ipynb
 
 Run the notebook cells sequentially.
 
-## 12. Limitations and Future Work
+## 11. Limitations and Future Work
 
 This project is an introductory study of data-driven modeling for mechanical systems.
 
@@ -232,7 +220,7 @@ Potential future extensions include:
 - Exploring system identification techniques.
 - Extending the framework toward data-driven control and reinforcement learning.
 
-## 13. Project Status
+## 12. Project Status
 
 Completed: Initial numerical simulation, dataset generation, Linear Regression training, and comparison with the physics-based model.
 
@@ -241,6 +229,7 @@ This project serves as an introductory step toward further studies in intelligen
 ---
 
 **Author:** Armin Moradi
+
 **Field of Interest:** Mechanical Engineering, Dynamics, Vibrations, Control, Robotics and Machine Learning
 ## Results
 
